@@ -36,6 +36,8 @@ class GestorIncidencias {
         break;
       }
     }
+    // guardar el cambio para que no se pierda
+    await datos.guardar(incidencias);
   }
 
   Future<void> crear(String titulo, String descripcion, String cliente,
