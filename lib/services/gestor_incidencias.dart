@@ -31,7 +31,7 @@ class GestorIncidencias {
   }
 
   int contar(String estado) {
-    if (estado == 'Pendiente') return cantidadPendientes;
+    // contar siempre desde la lista actual
     return incidencias.where((x) => x.estado == estado).length;
   }
 
